@@ -102,8 +102,11 @@ const { datasetId: evaluationDatasetId } = await createOrGetDataset({
     }
     return [
       {
-        input: { ...originalExample.input, ...originalExample.output },
-        output: { answer: run.output },
+        input: {
+          question: originalExample.input.question,
+          expected_answer: originalExample.output.answer,
+          task_answer: run.output,
+        },
       },
     ];
   }),
