@@ -5,6 +5,8 @@ This is a quickstart using the Phoenix SDK to create a dataset and a task, run a
 It will produce a dataset with factual inputs and outputs, then it will invoke
 an llm to answer the inputs (without knowing the answers), and finally a new dataset will be created with the original inputs combined with the llm outputs.
 
+![Phoenix Dataset Task Quickstart](./assets/evaluate.png)
+
 ## Usage
 
 Start Phoenix locally (or use https://app.phoenix.arize.com):
